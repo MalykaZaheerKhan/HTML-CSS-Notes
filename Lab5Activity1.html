@@ -1,0 +1,124 @@
+<!-- <html>
+    <head>
+<title>
+    Activity 01
+</title>
+<style>
+.div1{
+ /* height:80%; */
+ block-size:80%;     /*alternative of height */
+ background-color: darkgray;
+}
+@media (max-width:600px){
+
+}
+</style>
+    </head>
+    <body>
+<h1>Responsive form</h1>
+<h4>Resize the browser window to see the effect. When the screen size is less than 600px wide, , make the columns stack on top of eachother instaed of next to eachother</h4>
+<div class="div1">
+<form>
+    <table>
+
+    </table>
+</form>    
+
+</div> 
+</body>
+</html> -->
+
+
+
+<html>
+<head>
+<title>Responsive Form - Grid</title>
+
+<style>
+
+.container {
+    width: 95%;
+    block-size:75%;
+    margin: auto;
+    background-color: #ddd;
+    padding: 20px;
+}
+
+/* Grid layout */
+.form-grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 20px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+
+    .form-grid {
+        grid-template-columns: 100%;
+        
+    }
+
+    button {
+        width: 100%;
+       div{
+
+}
+        
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>Responsive Form</h2>
+<h4>Resize the browser window to see the effect. When the screen size is less than 600px wide, , make the columns stack on top of eachother instead of next to eachother</h4>
+
+
+<div class="container">
+<form>
+
+<div class="form-grid">
+
+<label>First Name</label>
+<input type="text">
+
+<label>Last Name</label>
+<input type="text">
+
+<label>Country</label>
+<select>
+    <option>Pakistan</option>
+    <option>USA</option>
+    <option>Oman</option>
+    <option>Italy</option>
+</select>
+
+<label>Subject</label>
+<textarea rows="3"></textarea>
+
+<div></div>
+<button type="submit">Submit</button>
+
+</div>
+
+</form>
+</div>
+
+</body>
+</html>
